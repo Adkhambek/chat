@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Chat</title>
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.15.2/css/all.css"
+        integrity="sha384-vSIIfh2YWi9wW0r9iZe7RJPrKwp6bG+s9QZMoITbCckVJqGCCRhc+ccxNcdpHuYu" crossorigin="anonymous">
+    <link rel="stylesheet" href="./fonts/stylesheet.css">
+    <link rel="stylesheet" href="./css/style.css">
+    <link rel="stylesheet" href="./css/icons.css">
+</head>
+
+<body>
+    <div class="chat">
+        <header class="chat__header">
+            <h1>Chat</h1>
+        </header>
+        <div class="chat__body">
+            <ul class="chat__list">
+                <li class="chat__content"><span class="triangle-left"></span>
+                    <div class="chat__content-left">
+                        <p class="chat__name">Adham</p>
+                        <p class="chat__text">Assalomu alekum</p>
+                    </div>
+                    
+                    <div class="chat__content-right"><time class="time">12:15 AM</time>
+                </li>
+                <li class="chat__content me"><span class="triangle-right"></span><span
+                        class="triangle-left hidden"></span>
+                        <div class="chat__content-left">
+                            <p class="chat__name">You</p>
+                            <p class="chat__text">Assalomu alekum</p>
+                        </div>
+                    <div class="chat__content-right"><time class="time">12:16 AM</time><span
+                            class="fas fa-check"></span></div>
+                </li>
+                <li class="chat__content me"><span class="triangle-right"></span><span
+                        class="triangle-left hidden"></span>
+                        <div class="chat__content-left">
+                            <p class="chat__name">You</p>
+                            <p class="chat__text">Assalomu alekum</p>
+                        </div>
+                    <div class="chat__content-right"><time class="time">9:51 PM</time><span class="fas fa-check"></span>
+                    </div>
+                </li>
+                <li class="chat__content me"><span class="triangle-right"></span>
+                    <div class="chat__content-left">
+                        <p class="chat__name">You</p>
+                        <p class="chat__text">Assalomu alekum</p>
+                    </div>
+                    <div class="chat__content-right"><time class="time">3:40 PM</time><span class="fas fa-check"></span>
+                    </div>
+                </li>
+                
+            </ul>
+        </div>
+        <footer class="chat__footer">
+            <form class="chat__form">
+                <label class="file-label">
+                    <span class="icon icon-file-upload"></span>
+                    <input type="file" name="file" class="file-input">
+                </label>
+                <textarea id="messagebox" rows="2" name="text" class="chat__message-area" placeholder="Write a message..."></textarea>
+
+                <button class="chat__emoji">
+                    <span class="icon icon-emoji"></span>
+                </button>
+                <button id="record" class="chat__audio-recorder">
+                    <span class="icon icon-audio-record"></span>
+                </button>
+                <button id="send" type="submit" class="submit hidden">
+                    <span class="icon icon-send"></span>
+                </button>
+            </form>
+        </footer>
+    </div>
+
+    <script src="./js/main.js"></script>
+</body>
+
+</html>
