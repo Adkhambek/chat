@@ -14,17 +14,17 @@
 <body>
     <div class="login">
         <header class="login__header">
-            <h1>Login</h1>
+            <h1 id="display">Login</h1>
         </header>
         <div class="login__body">
-         <form class="login__form">
+         <form id = "form"  class="login__form">
              <label>
                  <p>Username:</p>
-                 <input type="text" required autocomplete="off">
+                 <input id="username" type="text" required autocomplete="off">
              </label>
              <label>
                 <p>Password:</p>
-                <input type="password" required>
+                <input id="password" type="password" required>
             </label>
             <button type="submit">Login</button>
          </form>   
@@ -32,5 +32,6 @@
     </div>
 
     <script src="/js/main.js"></script>
+    <script src="/js/login.js"></script>
 </body>
 </html>

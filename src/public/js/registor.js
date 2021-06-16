@@ -1,5 +1,6 @@
 let id = window.localStorage.getItem('id')
 if(id) window.location = '/'
+
 form.onsubmit = async (event) => {
     event.preventDefault()
     
