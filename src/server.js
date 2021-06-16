@@ -23,7 +23,7 @@ app.get('/registor', registorController.GET)
 app.post('/registor', registorController.POST)
 app.get('/login', loginController.GET)
 app.post('/login', loginController.POST)
-app.get('/message', messageController.GET_MESSAGES)
+app.get('/messages/:id', messageController.GET_MESSAGES)
 app.get('/message/:id', messageController.GET_MESSAGE)
 app.post('/message', messageController.POST)
 

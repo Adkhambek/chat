@@ -1,7 +1,13 @@
 const messageModel = require('../model/messages')
 
 const GET_MESSAGES = (req, res) => {
-    res.json(messageModel.getMessages())
+    const {id} = req.params
+    const messages = messageModel.getMessages(id)
+    if(messages){
+        res.json(messages)
+    }else {
+        res.status(404).json({message: "The message not found"})
+    }
 } 
 
 const GET_MESSAGE = (req, res) => {

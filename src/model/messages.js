@@ -11,9 +11,10 @@ const insertMessage = (data) => {
         return newMessage
 } 
 
-const getMessages = () => {
+const getMessages = (id) => {
    const messages =  require(path.join(process.cwd(), '/src', '/database', '/messages.json'))
-   return messages
+   const othersMessage  = messages.filter(check => check.userId != id)
+   return othersMessage
 } 
 
 const getMessage = (id) => {
