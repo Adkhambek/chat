@@ -2,12 +2,31 @@
     {
         "id": 1,
         "phone": "998998000334",
-        "username": "Heaven_8"
+        "username": "Adham",
+        "password": "heaven12345678"
     },
     {
         "id": 2,
-        "phone": "998998000334",
-        "username": "Adham",
-        "password": "heaven12345678"
+        "phone": "998974420427",
+        "username": "Heaven_8",
+        "password": "123456"
+    },
+    {
+        "id": 3,
+        "phone": "998941120212",
+        "username": "HAsan",
+        "password": "123"
+    },
+    {
+        "id": 4,
+        "phone": "998000334",
+        "username": "Abdulloh",
+        "password": "123"
+    },
+    {
+        "id": 5,
+        "phone": "998997772345",
+        "username": "fotima",
+        "password": "123"
     }
 ]

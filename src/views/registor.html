@@ -14,21 +14,21 @@
 <body>
     <div class="registor">
         <header class="registor__header">
-            <h1>SignUp</h1>
+            <h1 id="display">SignUp</h1>
         </header>
         <div class="registor__body">
-         <form class="registor__form">
+         <form id="form" class="registor__form">
             <label>
                 <p>Phone Number:</p>
-                <input type="password" required>
+                <input id="phone"  type="phone" required>
             </label>
              <label>
                  <p>Username:</p>
-                 <input type="text" required autocomplete="off">
+                 <input id="username" type="text" required autocomplete="off">
              </label>
              <label>
                 <p>Password:</p>
-                <input type="password" required>
+                <input id="password" type="password" required>
             </label>
             <button type="submit">sign-up</button>
          </form>   
@@ -36,5 +36,6 @@
     </div>
 
     <script src="/js/main.js"></script>
+    <script src="/js/registor.js"></script>
 </body>
 </html>
