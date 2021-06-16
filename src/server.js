@@ -10,6 +10,7 @@ const { PORT, host } = require('./config')
 const homeController = require('./controller/homeController')
 const loginController = require('./controller/loginController')
 const registorController = require('./controller/registorController')
+const messageController = require('./controller/messageController')
 
 //Middleware
 
@@ -17,11 +18,13 @@ app.use(express.json())
 app.use(express.static(path.join(__dirname, '/public')))
 
 //Controller
-
+app.get('/', homeController.GET)
 app.get('/registor', registorController.GET)
 app.post('/registor', registorController.POST)
 app.get('/login', loginController.GET)
 app.post('/login', loginController.POST)
-app.get('/', homeController.GET)
+app.get('/message', messageController.GET_MESSAGES)
+app.get('/message/:id', messageController.GET_MESSAGE)
+app.post('/message', messageController.POST)
 
 app.listen(PORT, () => {console.log("server is running on http://" + host + ":" + PORT)})

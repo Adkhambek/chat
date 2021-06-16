@@ -6,7 +6,6 @@ const GET = (req, res) => {
 } 
 
 const POST = (req, res) => {
-    console.log(req.body);
     const user = userModel.insertUser(req.body)
     if(user){
         res.status(201).json({message: "The user has been registered", body: user})
