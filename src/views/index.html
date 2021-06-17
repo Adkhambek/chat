@@ -18,47 +18,14 @@
         <header class="chat__header">
             <h1>Chat</h1>
         </header>
-        <div class="chat__body">
-            <ul class="chat__list">
-                <li class="chat__content"><span class="triangle-left"></span>
-                    <div class="chat__content-left">
-                        <p class="chat__name">Adham</p>
-                        <p class="chat__text">Assalomu alekum</p>
-                    </div>
-                    
-                    <div class="chat__content-right"><time class="time">12:15 AM</time>
-                </li>
-                <li class="chat__content me"><span class="triangle-right"></span><span
-                        class="triangle-left hidden"></span>
-                        <div class="chat__content-left">
-                            <p class="chat__name">You</p>
-                            <p class="chat__text">Assalomu alekum</p>
-                        </div>
-                    <div class="chat__content-right"><time class="time">12:16 AM</time><span
-                            class="fas fa-check"></span></div>
-                </li>
-                <li class="chat__content me"><span class="triangle-right"></span><span
-                        class="triangle-left hidden"></span>
-                        <div class="chat__content-left">
-                            <p class="chat__name">You</p>
-                            <p class="chat__text">Assalomu alekum</p>
-                        </div>
-                    <div class="chat__content-right"><time class="time">9:51 PM</time><span class="fas fa-check"></span>
-                    </div>
-                </li>
-                <li class="chat__content me"><span class="triangle-right"></span>
-                    <div class="chat__content-left">
-                        <p class="chat__name">You</p>
-                        <p class="chat__text">Assalomu alekum</p>
-                    </div>
-                    <div class="chat__content-right"><time class="time">3:40 PM</time><span class="fas fa-check"></span>
-                    </div>
-                </li>
+        <div id="chatbody" class="chat__body">
+            <ul id="messages" class="chat__list">
                 
             </ul>
+            <div id="lastone"></div>
         </div>
         <footer class="chat__footer">
-            <form class="chat__form">
+            <form id="form" class="chat__form">
                 <label class="file-label">
                     <span class="icon icon-file-upload"></span>
                     <input type="file" name="file" class="file-input">

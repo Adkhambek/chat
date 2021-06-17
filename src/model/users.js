@@ -26,4 +26,9 @@ const loginUser = (user) => {
     
 }
 
-module.exports = {insertUser, loginUser}
+const getUsers = () => {
+    const users =  require(path.join(process.cwd(), '/src', '/database', '/users.json'))
+    return users
+}
+
+module.exports = {insertUser, loginUser, getUsers }

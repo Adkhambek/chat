@@ -1,8 +1,7 @@
 const messageModel = require('../model/messages')
 
 const GET_MESSAGES = (req, res) => {
-    const {id} = req.params
-    const messages = messageModel.getMessages(id)
+    const messages = messageModel.getMessages()
     if(messages){
         res.json(messages)
     }else {
